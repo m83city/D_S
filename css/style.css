@@ -1,0 +1,274 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #C5D5E6;
+}
+.title{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+}
+.content-text{
+    font-family: 'Gilroy';
+    font-weight: 300px;
+    font-size: 18px;
+    color: #fff;
+}
+
+body{
+    color: #C5D5E6;
+    font-family: 'Geometria';
+    background-image: url(../image/main-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin: 0px;
+    padding: 0px;
+}
+.header__top{
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 125px;
+}
+.language__box{
+    margin-left: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.language{
+    margin-right: 8px;
+}
+.language:nth-child(2),
+.language:nth-child(3){
+    opacity: 50%;
+}
+.header__menu{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+.header__menu-items{
+    padding: 9px 30px 3px;
+}
+.header__menu-items:nth-child(4){
+    padding: 9px 20px 3px;
+    background: linear-gradient(to left,#6082D7,#E73453);
+    border-radius: 5px;
+    color: #fff;
+}
+.header__search{
+    margin-left: 150px;
+}
+.content{
+    margin-left: 100px;
+    margin-bottom: 95px;
+}
+.container{
+    max-width: 710px;
+}
+.content__container-top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.container-top__text{
+    color: #fff;
+    font-size: 64px;
+    font-weight: 800;
+    padding-right: 10px;
+    line-height: 80px;
+}
+.container-top__title{
+    padding-top: 10px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.container-top__link{
+    margin-top: 25px;
+    margin-left: 5px;
+}
+.content__container-middle{
+    display: flex;
+    flex-direction: column;
+}
+.container-middle_text{
+    max-width: 456px;
+}
+.container-middle_text::before{ /*створення лінії*/
+    content:' ';
+    width: 50px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    border: 1px solid #fff;
+    display: block;
+    top:45%;
+}
+.middle-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.middle-box__link-arrow{
+  margin-right: 260px;
+}
+.middle-box__link-button{
+    background-color: rgba(0, 0, 0, 20%);
+    color: #fff;
+    border-radius: 10px;
+    padding: 17px 21px 10px;
+    box-shadow: 0px 0px 15px 10px rgba(229, 54, 86,20%),0px 0px 7px 2px rgba(157, 94, 154,20%);
+}
+.bottom-box{
+    display: flex;
+    align-items: center;
+}
+.bottom-box__link{
+    margin-left: 8px;
+    margin-top: 5px;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+.share-box{
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+}
+.share-text{
+    padding-right: 11px;
+}
+.icon{
+    padding-right:20px ;
+}
+.chat{
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('Gilroy-LightItalic.eot');
+    src: local('Gilroy Light Italic'), local('Gilroy-LightItalic'),
+        url('../fonts/Gilroy-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-LightItalic.woff') format('woff'),
+        url('../fonts/Gilroy-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+	font-family: 'Geometria';
+	src: url('Geometria-Medium.eot');
+	src: local('Geometria Medium'), local('Geometria-Medium'),
+		url('../fonts/Geometria-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Geometria-Medium.woff') format('woff'),
+		url('../fonts/Geometria-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Geometria';
+	src: url('Geometria-ExtraBold.eot');
+	src: local('Geometria ExtraBold'), local('Geometria-ExtraBold'),
+		url('../fonts/Geometria-ExtraBold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Geometria-ExtraBold.woff') format('woff'),
+		url('../fonts/Geometria-ExtraBold.ttf') format('truetype');
+	font-weight: 800;
+	font-style: normal;
+}

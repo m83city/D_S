@@ -1,0 +1,144 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+.title{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+body{
+    color: #C5D5E6;
+    font-family: 'Geometria';
+    background-image: url(../image/contact-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+}
+.header{
+    margin-bottom: 145px;
+}
+.header__menu-items:nth-child(3){
+    padding: 8px 20px 4px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 20%);
+    margin-right: 10px;
+}
+.content{
+    margin: 0 auto;
+    max-width: 700px;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 91px;align-items: center;
+}
+.number{
+    font-family: 'Gilroy';
+    font-size: 64px;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.email{
+    color: #fff;
+    font-size: 64px;
+    font-weight: 800;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form__text{
+    margin-bottom: 19px;
+    font-size: 18px;
+    font-weight: 300;
+}
+.form-input{
+    display: flex;
+}
+
+.input_text{
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: rgba(197, 213, 230, 20%);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 13px 50px 9px 10px;
+    margin-right: 20px;    
+}
+.input_text::placeholder{
+    color: #fff;
+}
+.button{
+    border: 1px solid transparent;
+    min-width: 200px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 20%);
+}
+.button__lable{
+    color: #fff;
+}
+.footer_contact{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.contact-box{
+    max-height: 20px;
+    margin-top: auto;
+    margin-left: 45%;
+}
+.chat{
+}
+
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('Gilroy-LightItalic.eot');
+    src: local('Gilroy Light Italic'), local('Gilroy-LightItalic'),
+        url('../fonts/Gilroy-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-LightItalic.woff') format('woff'),
+        url('../fonts/Gilroy-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('Gilroy-ExtraBold.eot');
+    src: local('Gilroy ExtraBold'), local('Gilroy-ExtraBold'),
+        url('../fontsGilroy-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../fontsGilroy-ExtraBold.woff') format('woff'),
+        url('../fontsGilroy-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+	font-family: 'Geometria';
+	src: url('Geometria-Medium.eot');
+	src: local('Geometria Medium'), local('Geometria-Medium'),
+		url('../fonts/Geometria-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Geometria-Medium.woff') format('woff'),
+		url('../fonts/Geometria-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Geometria';
+	src: url('Geometria-ExtraBold.eot');
+	src: local('Geometria ExtraBold'), local('Geometria-ExtraBold'),
+		url('../fonts/Geometria-ExtraBold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Geometria-ExtraBold.woff') format('woff'),
+		url('../fonts/Geometria-ExtraBold.ttf') format('truetype');
+	font-weight: 800;
+	font-style: normal;
+}
