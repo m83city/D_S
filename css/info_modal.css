@@ -1,49 +1,77 @@
 .vmodal{}
+/* CSS властивості для анімації появи модального інформаційного вікна (початок)*/ 
 .vmodal.open .modal-overlay,
 .vmodal.open .modal-window{
 opacity: 1;
 z-index: 1000;
 }
+.vmodal.hide .modal-overlay,
+.vmodal.hide .modal-window{
+opacity: 1;
+z-index: 1000;
+}
 
+.vmodal.open .modal-window{
+    transform: translateY(-800px);
+}
+.vmodal.open .modal-overlay{
+    background-color: rgba(197, 213, 230, 0);
+    backdrop-filter: blur(0px); 
+}
+
+
+.vmodal.open .modal-window{
+    transform: translateY(1px);
+}
+.vmodal.open .modal-overlay{
+    background-color: rgba(197, 213, 230, .5);
+    backdrop-filter: blur(15px); 
+}
+/* CSS властивості для появи/зникнення модального інформаційного вікна (кінець)*/
 .modal-overlay, .modal-window{
     opacity: 0;
     z-index: -1;
 }
 
-.title-modal{
+.title-modal{/*CSS h3*/
     font-family: 'Geometria';
     font-weight: 800;
  }
-.modal-overlay{
+.modal-overlay{/*CSS оверлея*/
     position: fixed;
     left: 0px;
     top: 0px;
     right: 0;
     bottom: 0;
-    background: rgba(197, 213, 230, 0.5);
-    backdrop-filter: blur(15px);
+    background-color: rgba(197, 213, 230, 0);
+    backdrop-filter: blur(0px);
+    transition:background-color .7s ease-in;
+    transition:backdrop-filter .7s ease-in;
     display: flex;
     flex-direction: column;
 }
 
-.modal-window{
+.modal-window{/*CSS вікна*/
     margin: 0 auto;
     width: 1340px;
     border-radius: 15px;
     background-color: #fff;
     display: flex;
     flex-direction: column;
+    transform: translateY(-800px);
+    transition: transform .5s ease-in;
 }
-.modal-close{
+.modal-close{/*CSS для хрестика закриття*/
     width: 44px;
-    color: rgba(46, 63, 105, 0.5);;
+    color: rgba(46, 63, 105, 0.5);
     font-weight: 300;
     font-size: 64px;
     margin-left: auto;
     margin-right: 70px;
     cursor: pointer;
 }    
-.first-title{
+
+.first-title{/*CSS для елементів вікна*/
     color: #363B5D;
     width: 520px;
     font-size: 64px;

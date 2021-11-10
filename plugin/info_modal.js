@@ -3,7 +3,7 @@ function _createModal(options){
     modal.classList.add('vmodal')
     modal.insertAdjacentHTML('afterbegin', `
     
-    <div class="modal-overlay">
+    <div class="modal-overlay" onclick="modal.close()">
         <span class="modal-close" onclick="modal.close()" >&times;</span>
         <div class="modal-window">
             <h1 class="first-title title-modal">Види допомоги</h1>
@@ -63,6 +63,7 @@ function _createModal(options){
 }
 
 $.modal = function(options){
+    const ANIMATION_SPEED = 700
     const $modal = _createModal(options)
     return{
         open(){
@@ -70,6 +71,10 @@ $.modal = function(options){
         },
         close(){
             $modal.classList.remove('open')
+            $modal.classList.add('hide')
+            setTimeout(() => {
+                $modal.classList.remove('hide')
+            }, ANIMATION_SPEED);
 
         }
     }
