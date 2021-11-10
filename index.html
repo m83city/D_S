@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/info_modal.css">
     <title>Document</title>
 
 </head>
+
 <body>
     <header class="header">
         <div class="header__top">
@@ -26,26 +29,27 @@
             <a href=""><img class="header__search" src="image/search.svg" alt="" onclick="search(this)"></a>
             <a class="header__login" href="">Вхід / Зареєструватися</a>
         </div>
-        
+
         <div class="content">
             <div class="container">
                 <div class="content__container-top">
-                    <h1 class="container-top__text">Добре Серце</h1>
+                    <h1 class="container-top__text"    >Добре Серце</h1>
                     <h2 class="container-top__title title">детальніше про проект</h2>
                     <a class="container-top__link" href=""><img src="image/arrow.png" alt=""></a>
                 </div>
                 <div class="content__container-middle">
-                    <p   class="container-middle_text content-text">Вже зараз Ви можете допомогти тим, хто дійсно потребує допомоги</з>
-                    <div class="middle-box">
-                        <a class="midde-box__link-text" href="">Як Ви можете допомогти?</a>
-                        <a class="middle-box__link-arrow" href=""><img src="image/arrow.png" alt=""></a>
-                        <a class="middle-box__link-button" href="">Допомогти вже зараз</a>
+                    <p class="container-middle_text content-text">Вже зараз Ви можете допомогти тим, хто дійсно потребує
+                        допомоги</з>
+                    <div class="middle-box"   >
+                        <a class="midde-box__link-text"   onclick="modal.open()" href="#">Як Ви можете допомогти?</a>
+                        <a class="middle-box__link-arrow" onclick="modal.open()"   href="#"><img src="image/arrow.png" alt=""></a>
+                        <a class="middle-box__link-button"   onclick="modal.open()" href="#">Допомогти вже зараз</a>
                     </div>
                 </div>
                 <div class="content__container-bottom">
                     <p class="container-bottom__text content-text">Якщо Вам необхідна допомога, додайте проект</p>
                     <div class="bottom-box">
-                        <h2 class="bottom-box__title title">Додати проект</h2>
+                        <h2 class="bottom-box__title title"    >Додати проект</h2>
                         <a class="bottom-box__link" href=""><img src="image/plus.png" alt=""></a>
                     </div>
                 </div>
@@ -53,6 +57,7 @@
         </div>
 
     </header>
+
     <footer class="footer">
         <div class="share-box">
             <p class="share-text">Розповісти всім:</p>
@@ -62,8 +67,12 @@
         </div>
         <img class="chat" src="image/chat.png" alt="">
     </footer>
-    
 
-    <script src="js/main.js"></script>
+
+    <script src="js/base.js"></script>
+    <script src="plugin/info_modal.js"></script>
+
+    <script src="js/index.js"></script>
 </body>
+
 </html>
