@@ -169,10 +169,21 @@ li.items{
 li.items .date{
     margin-top: 0;
 }
+li.items .images-item{
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 3s ease-in;
+}
+li.items .item__box-img{
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility .9s, opacity .9s ;
+}
 
 li.items .item__title{
     margin-top: -10px;
 }
+
 li.items .item-img__bg{
     background-color:rgba(0,0,0,.3);
     filter: brightness(50%);
@@ -186,6 +197,7 @@ li.items .text__sum{
     transition: visibility 1.5s, opacity 1.2s;
 
 }
+
 
 
 li.items.current__item {
@@ -202,6 +214,22 @@ li.items.current__item .item__title{
     background-color:rgba(0,0,0,.3);
     filter: brightness(100%);
     object-fit: cover;    
+}
+li.items.current__item .item__box-img{
+    opacity: 1;
+    visibility: visible;
+    margin-top: 100px;
+    margin-left: 60px;
+}
+li.items.current__item .images-item{
+    max-width: 30px;
+    max-height: 30px;
+    opacity: 1;
+    visibility: visible;
+    padding: 5px;
+    border-radius: 5px;
+    background-color :#8492F3;
+    margin-top: 5px;
 }
 
 
