@@ -21,7 +21,6 @@ body{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 125px;
 }
 .language__box{
     margin-left: 100px;
@@ -66,10 +65,14 @@ color: #C5D5E6;
     justify-content: space-evenly;
 }
 .menu-item{
+    
     align-items: center;
     display: flex;
     font-size: 64px;
     font-family: 'Geometria';
+}
+.item-text{
+    cursor: pointer;
 }
 
 
@@ -125,10 +128,83 @@ li.current .counter-item{
     margin-top: 100px;
 }
 .list-content__item-box{
-   
+    display: flex;
+    flex-direction: column;
     max-width: 1250px;
     list-style-type: none;
 }
+.items{
+    font-family: 'Gilroy';
+    display: flex;
+    border-bottom: 1px solid rgba(216, 216, 216, .5)
+}
+.items__text{
+    margin: 0 auto 0 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.date{
+    color: #C5D5E6;
+    font-weight: 300;
+
+}
+.item__title{
+    font-family: 'Geometria';
+    font-weight: 800;
+}
+.text__urgently{
+    font-size: 14px;
+    margin-top: -20px;
+}
+.text__sum{
+    
+    color: #B4C4D8;
+}
+/*js item*/
+li.items{
+    max-height: 100px;
+    transition: max-height .9s;
+}
+li.items .date{
+    margin-top: 0;
+}
+
+li.items .item__title{
+    margin-top: -10px;
+}
+li.items .item-img__bg{
+    background-color:rgba(0,0,0,.3);
+    filter: brightness(50%);
+    object-fit: cover;
+    transition: filter .9s;    
+}
+li.items .text__urgently,
+li.items .text__sum{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 1.5s, opacity 1.2s;
+
+}
+
+
+li.items.current__item {
+    max-height: 200px;
+}
+li.items.current__item .text__urgently,
+li.items.current__item .text__sum{
+    visibility: visible;
+    opacity: 1;
+}
+li.items.current__item .item__title{
+    margin-top: 10px;
+}li.items.current__item .item-img__bg{
+    background-color:rgba(0,0,0,.3);
+    filter: brightness(100%);
+    object-fit: cover;    
+}
+
+
 
 @font-face {
 	font-family: 'Geometria';
@@ -158,5 +234,15 @@ li.current .counter-item{
         url('../fonts/Gilroy/Gilroy-ExtraBold.woff') format('woff'),
         url('../fonts/Gilroy/Gilroy-ExtraBold.ttf') format('truetype');
     font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy/Gilroy-Light.eot');
+    src: local('Gilroy Light'), local('Gilroy-Light'),
+        url('../fonts/Gilroy/Gilroy-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy/Gilroy-Light.woff') format('woff'),
+        url('../fonts/Gilroy/Gilroy-Light.ttf') format('truetype');
+    font-weight: 300;
     font-style: normal;
 }
