@@ -116,9 +116,9 @@ body{
     font-family: 'Gilroy';
     src: url('Gilroy-ExtraBold.eot');
     src: local('Gilroy ExtraBold'), local('Gilroy-ExtraBold'),
-        url('../fontsGilroy-ExtraBold.eot?#iefix') format('embedded-opentype'),
-        url('../fontsGilroy-ExtraBold.woff') format('woff'),
-        url('../fontsGilroy-ExtraBold.ttf') format('truetype');
+        url('../fonts/Gilroy/Gilroy-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy/Gilroy-ExtraBold.woff') format('woff'),
+        url('../fonts/Gilroy/Gilroy-ExtraBold.ttf') format('truetype');
     font-weight: 800;
     font-style: normal;
 }
@@ -126,9 +126,9 @@ body{
 	font-family: 'Geometria';
 	src: url('Geometria-Medium.eot');
 	src: local('Geometria Medium'), local('Geometria-Medium'),
-		url('../fonts/Geometria-Medium.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/Geometria-Medium.woff') format('woff'),
-		url('../fonts/Geometria-Medium.ttf') format('truetype');
+		url('../fonts/Geometria/Geometria-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Geometria/Geometria-Medium.woff') format('woff'),
+		url('../fonts/Geometria/Geometria-Medium.ttf') format('truetype');
 	font-weight: 500;
 	font-style: normal;
 }
@@ -136,9 +136,9 @@ body{
 	font-family: 'Geometria';
 	src: url('Geometria-ExtraBold.eot');
 	src: local('Geometria ExtraBold'), local('Geometria-ExtraBold'),
-		url('../fonts/Geometria-ExtraBold.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/Geometria-ExtraBold.woff') format('woff'),
-		url('../fonts/Geometria-ExtraBold.ttf') format('truetype');
+		url('../fonts/Geometria/Geometria-ExtraBold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Geometria/Geometria-ExtraBold.woff') format('woff'),
+		url('../fonts/Geometria/Geometria-ExtraBold.ttf') format('truetype');
 	font-weight: 800;
 	font-style: normal;
 }
