@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/archive.css">
+    <title>Термінова допомога</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__top">
+            <a href="index.html"><img class="logo" src="image/logo.png" width="36" height="32" alt=""></a>
+            <div class="language__box">
+                <a class="language" href="">УКР</a>
+                <a class="language" href="">РУС</a>
+                <a class="language" href="">EN</a>
+            </div>
+            <ul class="header__menu">
+                <li class="header__menu-items"><a class="menu__link" href="">Проекти</a></li>
+                <li class="header__menu-items"><a class="menu__link" href="">Архів</a></li>
+                <li class="header__menu-items"><a class="menu__link" href="contacts.html">Контакти</a></li>
+                <li class="header__menu-items"><a class="menu__link" href="urgent_help.html">Термінова допомога</a></li>
+            </ul>
+            <a href=""><img class="header__search" src="image/search.svg" alt="" onclick="search(this)"></a>
+            <a class="header__login" href="">Вхід / Зареєструватися</a>
+        </div>
+    </header>
+
+    <div class="menu-content" id="menu-div">
+        <ul class="menu-box">
+            <li class="menu-item">
+                <label class="item-text" for="">Війна</label>
+                <p class="counter-item">1</p>
+            </li>
+            <li class="menu-item">
+                <label class="item-text" for="">Екологія</label>
+                <p class="counter-item">2</p>
+            </li>
+            <li class="menu-item">
+                <label class="item-text" for="">Діти</label>
+                <p class="counter-item">3</p>
+            </li>
+            <li class="menu-item">
+                <label class="item-text" for="">Освіта</label>
+                <p class="counter-item">4</p>
+            </li>
+        </ul>
+        <div class="types-help">
+            <p class="types-help-text">Види допомоги</p>
+            <img class="arrow" src="image/arrow.png" alt="">
+        </div>
+    </div>
+
+    <div class="list-content" id="list-box">
+        <ul class="list-content__item-box" id="item-box">
+            <li class="items current__item">
+                <img src="image/archive1.jpg" class="item-img__bg" src="" alt="">
+                <div class="items__text">
+                    <p class="date">07.02.2017</p>
+                    <h3 class = "item__title">Організація поїздки сиріт до дитячого табору у Болгарії</h3>
+                    <p class="text__urgently">Перебуваючи у сиротинцях ці діти мають різного роду матеріальні та нематеріальні потреби,
+                         якими зазвичай ніхто не займається. Ті, хто має займатися утриманням дитячих будинків,
+                          опікою над дітьми часто забувають про свій обов’язок або ж отримують недостатнє фінансування від держави.
+                         Тому вся надія цих діточок покладається на небайдужих людей, волонтерів, благодійні фонди. </p>
+                    <p class="text__sum">Допомогли: Ім’я Фамілія, ВАТ “Фірма 1”, Ім’я Фамілія 4, ВАТ “Фірма 3”  </p>
+                </div>
+                <div class="item__box-img">
+                    <div class="right-img__box">
+                        <p class="right-img__box-text">фінансова допомога</p>
+                        <img class="images-item" src="image/modal-help2.svg" alt="">
+                    </div>
+                    <div class="right-img__box">
+                        <p class="right-img__box-text">матеріальна допомога</p>
+                        <img class="images-item" src="image/modal-help3.svg" alt="">
+                    </div>
+                </div>
+            </li>
+            <li class="items">
+                <img src="image/archive2.jpg" class="item-img__bg" src="" alt="">
+                <div class="items__text">
+                    <p class="date">04.01.2017</p>
+                    <h3 class = "item__title">Секція з футболу для дітей початкових класів</h3>
+                    <p class="text__urgently">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo illo in incidunt labore blanditiis praesentium!</p>
+                    <p class="text__sum">Допомогли: Ім’я Фамілія, ВАТ “Фірма 1”, Ім’я Фамілія 4, ВАТ “Фірма 3”  </p>
+                </div>
+                <div class="item__box-img">
+                    <div class="right-img__box">
+                        <p class="right-img__box-text">фінансова допомога</p>
+                        <img class="images-item" src="image/modal-help2.svg" alt="">
+                    </div>
+                    <div class="right-img__box">
+                        <p class="right-img__box-text">матеріальна допомога</p>
+                        <img class="images-item" src="image/modal-help3.svg" alt="">
+                    </div>
+                </div>
+            </li>
+            <li class="items">
+                <img src="image/archive3.jpg" class="item-img__bg" src="" alt="">
+                <div class="items__text">
+                    <p class="date">03.01.2017</p>
+                    <h3 class = "item__title">Адаптація дітей із зони АТО</h3>
+                    <p class="text__urgently">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, dolores!</p>
+                    <p class="text__sum">Lorem ipsum dolor sit.
+                    </p>
+                </div>
+                <div class="item__box-img">
+                    <div class="right-img__box">
+                        <p class="right-img__box-text">фінансова допомога</p>
+                        <img class="images-item" src="image/modal-help2.svg" alt="">
+                    </div>
+                    <div class="right-img__box">
+                        <p class="right-img__box-text">матеріальна допомога</p>
+                        <img class="images-item" src="image/modal-help3.svg" alt="">
+                    </div>
+                </div>
+            </li>
+            <li class="items">
+                <img src="image/img-list3.jpg" class="item-img__bg" src="" alt="">
+                <div class="items__text">
+                    <p class="date">03.05.2017</p>
+                    <h3 class = "item__title">Необхідно купити ліки у дитячий будинок</h3>
+                    <p class="text__urgently">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero distinctio neque ab doloremque sequi harum ullam nostrum cupiditate expedita laboriosam.</p>
+                    <p class="text__sum">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                </div>
+                <div class="item__box-img">
+                    <div class="right-img__box">
+                        <p class="right-img__box-text">фінансова допомога</p>
+                        <img class="images-item" src="image/modal-help2.svg" alt="">
+                    </div>
+                    <div class="right-img__box">
+                        <p class="right-img__box-text">матеріальна допомога</p>
+                        <img class="images-item" src="image/modal-help3.svg" alt="">
+                    </div>
+                </div>
+            </li>
+            <li class="items">
+                <img src="image/img-list2.jpg" class="item-img__bg" src="" alt="">
+                <div class="items__text">
+                    <p class="date">12.10.2016</p>
+                    <h3 class = "item__title">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                    <p class="text__urgently">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo modi exercitationem qui corporis dicta, voluptate minus nostrum eos aut,
+                         explicabo itaque quidem omnis voluptatum facilis.</p>
+                    <p class="text__sum">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, voluptatibus.</p>
+                </div>
+                <div class="item__box-img">
+                    <div class="right-img__box">
+                        <p class="right-img__box-text">фінансова допомога</p>
+                        <img class="images-item" src="image/modal-help2.svg" alt="">
+                    </div>
+                    <div class="right-img__box">
+                        <p class="right-img__box-text">матеріальна допомога</p>
+                        <img class="images-item" src="image/modal-help3.svg" alt="">
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <a class="chat" href=""><img src="image/chat.png" alt=""></a>
+
+    <script src="plugin/menu_urgently.js"></script>
+    <script src="plugin/item_urgently.js"></script>
+
+</body>
+</html>
