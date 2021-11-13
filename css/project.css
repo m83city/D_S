@@ -1,0 +1,329 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+body{
+    height: 100%;
+    color: #fff;
+    background: linear-gradient(321deg, #4792E1 -91.81%, #4174B3 -31.53%, #363B5D 82.08%);
+}
+.header__top{
+    font-family: 'Geometria';
+    font-weight: 800;
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.language__box{
+    margin-left: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.language{
+    margin-right: 8px;
+}
+.language:nth-child(2),
+.language:nth-child(3){
+    opacity: 50%;
+}
+.header__menu{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+.header__menu:nth-child(2),
+.header__menu:nth-child(3){
+color: #C5D5E6;
+}
+.header__menu-items:nth-child(4){
+    padding: 9px 20px 3px;
+    background: linear-gradient(to left,#6082D7,#E73453);
+    border-radius: 5px;
+    color: #fff;
+}
+.header__menu-items{
+    padding: 9px 30px 3px;
+}
+.header__menu-items:nth-child(1){
+    padding: 9px 20px 3px;
+    background: rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    color: #fff;
+}
+.header__search{
+    margin-left: 150px;
+}
+
+.menu-box{
+    list-style-type: none;
+    display: flex;
+    max-width: 1200px;
+    justify-content: space-evenly;
+}
+.menu-item{
+    
+    align-items: center;
+    display: flex;
+    font-size: 64px;
+    font-family: 'Geometria';
+}
+.item-text{
+    cursor: pointer;
+}
+.arrow{
+    transform: rotate(90deg);
+    max-width: 15px;
+    max-height: 15px;
+}
+
+
+/*JS menu CSS efect start*/
+li.menu-item{
+    font-family: 'Geometria';
+    font-weight: 800;
+    padding-left: 20px;
+    color: rgba(255, 255, 255, .15);
+    transition: color .9s,  margin-left 1s, margin-right 1s
+}
+li.menu-item .counter-item{
+    opacity: 0;
+    visibility: hidden;
+    margin: 0;
+    font-size: 18px;
+    transition: opacity .9s;
+} 
+li.current{
+    color: rgba(255, 255, 255, 1);
+    margin-left: 100px;
+    margin-right: 100px;
+    align-items: center;
+    text-align: center;
+}
+li.current .counter-item{
+    visibility: visible;
+    opacity: 100%;
+    margin-left: 10px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Gilroy';
+    color: #E63554;
+}
+/*JS end*/
+.types-help{
+    margin-bottom: 48px;
+    display: flex;
+    float: right;
+    margin-right: 56px;
+    align-items: center;
+}
+.types-help-text{
+    font-family: 'Geometria';
+    font-weight: 500;
+    margin-right: 10px;
+    color: #C5D5E6;
+}
+
+
+
+.list-content{
+    margin-top: 100px;    
+}
+.list-content__item-box{
+    margin-right: 60px;
+    display: flex;
+    flex-direction: column;
+    min-width: 1240px;
+    list-style-type: none;
+}
+.items{
+    font-family: 'Gilroy';
+    display: flex;
+    border-bottom: 1px solid rgba(216, 216, 216, .5)
+}
+.items__text{
+    margin: 0 auto 0 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.date{
+    color: #C5D5E6;
+    font-weight: 300;
+
+}
+.item__title{
+    font-family: 'Geometria';
+    font-weight: 800;
+}
+.text__urgently{
+    font-size: 14px;
+    margin-top: -20px;
+}
+.text__sum{
+    
+    color: #B4C4D8;
+}
+.right-img__box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+.right-img__box-text{
+    margin-right: 5px;
+    max-width: 60px;
+}
+/*js item*/
+li.items{
+    max-height: 100px;
+    transition: max-height .9s;
+}
+li.items .date{
+    margin-top: 0;
+}
+li.items .images-item{
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 3s ease-in;
+}
+li.items .item__box-img{
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility .9s, opacity .9s ;
+}
+
+li.items .item__title{
+    margin-top: -10px;
+}
+
+li.items .item-img__bg{
+    background-color:rgba(0,0,0,.3);
+    filter: brightness(50%);
+    object-fit: cover;
+    transition: filter .9s;    
+}
+li.items .text__urgently,
+li.items .text__sum{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 1.5s, opacity 1.2s;
+
+}
+
+
+
+li.items.current__item {
+    max-height: 200px;
+}
+li.items.current__item .text__urgently{
+    visibility: visible;
+    opacity: 1;
+    color: #fff;
+}
+li.items.current__item .text__sum{
+    visibility: visible;
+    opacity: 1;
+    color: rgba(180, 196, 216, .5);
+}
+li.items.current__item .item__title{
+    margin-top: 10px;
+}li.items.current__item .item-img__bg{
+    background-color:rgba(0,0,0,.3);
+    filter: brightness(100%);
+    object-fit: cover;    
+}
+li.items.current__item .item__box-img{
+    opacity: 1;
+    font-weight: 300;
+    visibility: visible;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: #C5D5E6;
+}
+li.items.current__item .images-item{
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+    visibility: visible;
+    padding: 5px;
+    border-radius: 5px;
+    background-color :#8492F3;
+    margin-top: 5px;
+}
+li.items.current__item .urgently_help{
+    transition: margin-top 1s;
+    margin-top: 170px;
+    margin-left: 5px;
+}
+.chat{
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        z-index: 1000;
+        margin-bottom: 20px;
+        margin-right: 20px;
+}
+.urgently_help{
+    background: linear-gradient(270deg, #6082D7 -81.69%, #E73453 100%);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 0;
+    max-height: 24px;
+    position: absolute;
+    margin-top: 70px;
+}
+
+
+
+@font-face {
+	font-family: 'Geometria';
+	src: url('../fonts/Geometria/Geometria-ExtraBold.eot');
+	src: local('Geometria ExtraBold'), local('Geometria-ExtraBold'),
+		url('../fonts/Geometria/Geometria-ExtraBold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Geometria/Geometria-ExtraBold.woff') format('woff'),
+		url('../fonts/Geometria/Geometria-ExtraBold.ttf') format('truetype');
+	font-weight: 800;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Geometria';
+	src: url('../fonts/Geometria/Geometria-Medium.eot');
+	src: local('Geometria Medium'), local('Geometria-Medium'),
+		url('../fonts/Geometria/Geometria-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Geometria/Geometria-Medium.woff') format('woff'),
+		url('../fonts/Geometria/Geometria-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy/Gilroy-ExtraBold.eot');
+    src: local('Gilroy ExtraBold'), local('Gilroy-ExtraBold'),
+        url('../fonts/Gilroy/Gilroy-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy/Gilroy-ExtraBold.woff') format('woff'),
+        url('../fonts/Gilroy/Gilroy-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy/Gilroy-Light.eot');
+    src: local('Gilroy Light'), local('Gilroy-Light'),
+        url('../fonts/Gilroy/Gilroy-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy/Gilroy-Light.woff') format('woff'),
+        url('../fonts/Gilroy/Gilroy-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}

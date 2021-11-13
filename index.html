@@ -11,7 +11,7 @@
 
 </head>
 
-<body>
+<body class="body_main">
     <header class="header">
         <div class="header__top">
             <a href="index.html"><img class="logo" src="image/logo.png" width="36" height="32" alt=""></a>
@@ -21,7 +21,7 @@
                 <a class="language" href="">EN</a>
             </div>
             <ul class="header__menu">
-                <li class="header__menu-items"><a class="menu__link" href="">Проекти</a></li>
+                <li class="header__menu-items"><a class="menu__link" href="project.html">Проекти</a></li>
                 <li class="header__menu-items"><a class="menu__link" href="archive.html">Архів</a></li>
                 <li class="header__menu-items"><a class="menu__link" href="contacts.html">Контакти</a></li>
                 <li class="header__menu-items"><a class="menu__link" href="urgent_help.html">Термінова допомога</a></li>
@@ -49,7 +49,7 @@
                 <div class="content__container-bottom">
                     <p class="container-bottom__text content-text">Якщо Вам необхідна допомога, додайте проект</p>
                     <div class="bottom-box">
-                        <h2 class="bottom-box__title title"    >Додати проект</h2>
+                        <h2 class="bottom-box__title title" onclick="modal.open_form()"    >Додати проект</h2>
                         <a class="bottom-box__link" href=""><img src="image/plus.png" alt=""></a>
                     </div>
                 </div>
@@ -71,6 +71,7 @@
 
     <script src="js/base.js"></script>
     <script src="plugin/info_modal.js"></script>
+    t>
 
     <script src="js/index.js"></script>
 </body>
