@@ -154,7 +154,7 @@ function _createModal_form(options) {
     </div>
     <div class="input-box__label--long">
         <label for="" class="label__text">Розрахунковий рахунок</label>
-        <input type="text" >
+        <input type="text" class="input_text-long">
     </div>
 </div>
 <div class="juristische-right">
@@ -186,35 +186,35 @@ function _createModal_form(options) {
 </div>
 <div class="form__footer">
 <div class="footer__title">
-    <h1 class="title">Види допомоги</h1>
-    <label for="" class="label__text">Ви можете змінити вид допомоги</label>
+    <h1 class="title_form">Види допомоги</h1>
+    <label for="" class="label__text-footer">Ви можете змінити вид допомоги</label>
 </div>
 <div class="help__menu">
     <ul class="help__type">
-        <li class="menu__type-item">
-            <div class="item">
-                <img src="image/modal-help1.svg" alt="">
-                <p>Зробити</p>
+        <li class="menu__type-item" onclick="modal.todo()" >
+            <div class="item-menu_type">
+                <img class="menu__type-item-img todo" src="image/modal-help1.svg" alt="">
+                <p class="label_item-menu">Зробити</p>
             </div>
         </li>
-        <li class="menu__type-item">
-            <div class="item">
-                <img src="image/modal-help2.svg" alt="">
-                <p>Фінансова
+        <li class="menu__type-item" onclick="modal.finance_help()">
+            <div class="item-menu_type">
+                <img class="menu__type-item-img finance_help" src="image/modal-help2.svg" alt="">
+                <p class="label_item-menu">Фінансова
                     допомога</p>
             </div>
         </li>
         <li class="menu__type-item">
-            <div class="item">
-                <img src="image/modal-help3.svg" alt="">
-                <p>Матеріальна
+            <div class="item-menu_type"onclick="modal.material_help()">
+                <img class="menu__type-item-img material_help" src="image/modal-help3.svg" alt="">
+                <p class="label_item-menu">Матеріальна
                     допомога</p>
             </div>
         </li>
         <li class="menu__type-item">
-            <div class="item">
-                <img src="image/modal-help4.svg" alt="">
-                <p>Волонтерство</p>
+            <div class="item-menu_type"onclick="modal.volontier()">
+                <img class="menu__type-item-img volontier" src="image/modal-help4.svg" alt="">
+                <p class="label_item-menu">Волонтерство</p>
             </div>
         </li>
     </ul>
@@ -223,31 +223,36 @@ function _createModal_form(options) {
     <div class="payment-left">
         <label class="payment__text" for=""></label>
         <ul class="payment-table">
-            <li class="payment-items"><img src="" alt=""><label for="" class="label__text"></label></li>
-            <li class="payment-items"><img src="" alt=""><label for="" class="label__text"></label></li>
-            <li class="payment-items"><img src="" alt=""><label for="" class="label__text"></label></li>
-            <li class="payment-items"><img src="" alt=""><label for="" class="label__text"></label></li>
-            <li class="payment-items"><img src="" alt=""><label for="" class="label__text"></label></li>
-            <li class="payment-items"><img src="" alt=""><label for="" class="label__text"></label></li>
+            <li class="payment-items"><img src="image/visa.svg" alt=""><label for="" class="label__text">Карта Visa/MasterCard</label></li>
+            <li class="payment-items"><img src="image/privat.svg" alt=""><label for="" class="label__text">Приват24</label></li>
+            <li class="payment-items"><img src="image/terminal.svg" alt=""><label for="" class="label__text">Термінали України</label></li>
+            <li class="payment-items"><img src="image/webmoney.svg" alt=""><label for="" class="label__text">WebMoney</label></li>
+            <li class="payment-items"><img src="image/paypal.svg" alt=""><label for="" class="label__text">PayPal</label></li>
+            <li class="payment-items"><img src="image/bank.svg" alt=""><label for="" class="label__text">Банковський переказ</label></li>
         </ul>
     </div>
     <div class="payment-right">
-        <label for="" class="label__text">Введіть наступні данні</label>
+    <label for="" class="label__text">Введіть наступні данні</label> crateFormFrame
+    <div class="card">
         <div class="number-text">
-            <label for="" class="label__text">Номер карти</label>
+            <label for="" class="label__text-number__card">Номер карти</label>
             <ul class="number-card__box">
-                <li class="item-number__card"></li>
-                <li class="item-number__card"></li>
-                <li class="item-number__card"></li>
-                <li class="item-number__card"></li>
+                <li class="item-number__card"><input class="number__card-input" type="text"> </li>
+                <li class="item-number__card"><input class="number__card-input" type="text"> </li>
+                <li class="item-number__card"><input class="number__card-input" type="text"> </li>
+                <li class="item-number__card"><input class="number__card-input" type="text"> </li>
             </ul>
         </div>
-        
         <div class="footer__card">
-            <div class="footer__card-item"><label for="" class="label__text">Термін дії</label><input  class = "input_text" type="text"></div>
-            <div class="footer__card-item"><label for="" class="label__text"></label>CVC/CVV<input  class = "input_text" type="text"></div>
+            <div class="footer__card-item">
+            <label for="" class="label__on-card">Термін дії</label>
+            <input class="number__card" type="text"></div>
+            <div class="footer__card-item">
+            <label for="" class="label__on-card">CVC/CVV</label>
+            <input class="number__card" type="text"></div>
         </div>
     </div>
+</div>
 </div>
 
 </div>
@@ -300,6 +305,30 @@ $.modal = function (options) {
             $modal_form.classList.remove('switch_on_fiz')
             $modal_form.classList.add('switch_on_yur')
         },
+        todo(){
+            $modal_form.classList.remove('material_help')
+            $modal_form.classList.remove('volontier')
+            $modal_form.classList.remove('finance_help')
+            $modal_form.classList.add('todo')
+        },
+        finance_help(){
+            $modal_form.classList.remove('todo')
+            $modal_form.classList.remove('volontier')
+            $modal_form.classList.remove('material_help')
+            $modal_form.classList.add('finance_help')
+        },
+        material_help(){
+            $modal_form.classList.remove('todo')
+            $modal_form.classList.remove('volontier')
+            $modal_form.classList.remove('finance_help')
+            $modal_form.classList.add('material_help')
+        },
+        volontier(){
+            $modal_form.classList.remove('todo')
+            $modal_form.classList.remove('material_help')
+            $modal_form.classList.remove('finance_help')
+            $modal_form.classList.add('volontier')
+        }
 
 
 

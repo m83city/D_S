@@ -141,6 +141,7 @@ z-index: 1000;
     color: #FFF;
     margin-right: -6px;
 }
+
 .vmodal.open.switch_on_yur  .yur{
     background-color: #363B5D;
     color: #FFF;
@@ -148,15 +149,44 @@ z-index: 1000;
 }
 
 .vmodal.open.switch_on_yur .form__juristische{
+    margin-top: 70px;
+    margin-bottom: 70px;
     visibility: visible;
     opacity: 1;
 }
+
 .vmodal.open.switch_on_fiz .form__juristische{
+    margin-top: 0px;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+}
+.vmodal.open.switch_on_fiz .form__juristische{
+    margin-top: 70px;
     visibility: hidden;
     opacity: 0;
     height: 0;
 }
 /*switch end*/
+
+/*switch type payment start*/
+.vmodal.open.switch_on_fiz.todo .todo,
+.vmodal.open.switch_on_yur.todo .tood{
+    background-color: #9C5D9A;
+}
+.vmodal.open.switch_on_fiz.finance_help .finance_help,
+.vmodal.open.switch_on_yur.finance_help .finance_help{
+    background-color: #9C5D9A;
+}
+.vmodal.open.switch_on_fiz.material_help .material_help,
+.vmodal.open.switch_on_yur.material_help .material_help{
+    background-color: #9C5D9A;
+}
+.vmodal.open.switch_on_fiz.volontier .volontier,
+.vmodal.open.switch_on_yur.volontier .volontier{
+    background-color: #9C5D9A;
+}
+
 /*початок стилів input + text*/
 .input-box{
     margin-top: 50px;
@@ -207,6 +237,124 @@ z-index: 1000;
     display: flex;
     flex-direction: column;
 }
+.form__juristische{
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer__title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.label__text-footer{
+    font-weight: 300;
+    font-family: 'Gilroy';
+    color: #363B5D;
+    font-size: 18px;
+}
+.help__type{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+.item-menu_type{
+    display: flex;
+}
+.menu__type-item{
+    align-items: center;
+    text-align: center;
+    
+}
+
+
+.menu__type-item-img{
+    border: 2px solid #C5D5E6;
+    border-radius: 15px;
+    padding: 20px;
+    height: 80px;
+    width: 80px;
+}
+.label_item-menu{
+    margin-left: 20px;
+    max-width: 120px;
+    font-weight: 800;
+    font-size: 18px;
+    color: #363B5D;
+}
+/*payment boxing*/
+.payment-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.payment-table{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+.payment-items{
+    border-radius: 5px;
+    height: 85px;
+    width: 170px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: royalblue;
+}
+/*car box*/
+.card{
+    border-radius: 15px;
+    background-color: #C5D5E6;
+}
+.number-text{
+    display: flex;
+    flex-direction: column;
+}
+.label__on-card,
+.label__text-number__card{
+    color: #fff;
+}
+.label__text-number__card{
+   margin-top: 10px;
+   margin-left: 10px;
+}
+.number-card__box{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+
+}
+.number__card-input{
+    border-radius: 5px;
+    margin-right: 10px;
+    height: 40px;
+    width: 74px;
+    background-color: #F3F7FA;
+    border: 0;
+}
+.item-number__card:nth-child(4){
+    margin-right: 25px;
+}
+.footer__card{
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer__card-item{
+    display: flex;
+    flex-direction: column;
+}
+.number__card{
+    margin-bottom: 20px;
+    width: 130px;
+    height: 40px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #F3F7FA;
+    
+}
+
 
 @font-face {
 	font-family: 'Geometria';
