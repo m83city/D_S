@@ -1,0 +1,123 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+.title{
+    font-family: 'Geometria';
+}
+.search{
+visibility: hidden;
+opacity: 0;
+z-index: -1;
+}
+.close{
+    cursor: pointer;
+    width: 44px;
+    color: rgba(46, 63, 105, 0.5);
+    font-weight: 300;
+    font-size: 64px;
+    margin-right: 5px;
+}
+
+.search.open{
+    
+    opacity: 1;
+    visibility: visible;
+}
+.searching{
+    position: fixed;
+    top: 15px;
+    left: 30px;
+    right: 30px;
+    
+}
+.search_stroke{
+    background-color: rgba(197, 213, 230, .5);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.search_text{
+    color: rgba(46, 63, 105, .5);
+    margin-left: 5px;
+    font-size: 18px;
+    width: 10%;
+}
+.main_search{
+    padding-top: 10px;
+    text-align: center;
+    width: 80%;
+    background-color: transparent;
+    outline: none;
+    border: 0px;
+    color: #fff;
+    font-size: 40px;
+}
+
+.content-search{
+    position: fixed;
+    border-radius: 10px;
+    top: 100px;
+    left: 30px;
+    right: 30px;
+    font-family: 'Gilroy';
+    color: #fff;
+    margin-top: 20px;
+    background-color: rgba(197, 213, 230, .5);
+    backdrop-filter: blur(20px);    
+}
+.project-content__box{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}.project__text-title{
+    font-weight: 500;
+    font-size: 24px;
+}
+.text-item{
+    max-width: 300px;
+}
+.item__content-text-border{
+    display: flex;
+    min-width: 980px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-bottom: 1px solid #fff;
+}
+.op{
+    opacity: 0;
+}
+.archive-content__box{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('Gilroy-LightItalic.eot');
+    src: local('Gilroy Light Italic'), local('Gilroy-LightItalic'),
+        url('../fonts/Gilroy/Gilroy-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy/Gilroy-LightItalic.woff') format('woff'),
+        url('../fonts/Gilroy/Gilroy-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+	font-family: 'Geometria';
+	src: url('Geometria-Medium.eot');
+	src: local('Geometria Medium'), local('Geometria-Medium'),
+		url('../fonts/Geometria/Geometria-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Geometria/Geometria-Medium.woff') format('woff'),
+		url('../fonts/Geometria/Geometria-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
