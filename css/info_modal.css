@@ -171,7 +171,7 @@ z-index: 1000;
 
 /*switch type payment start*/
 .vmodal.open.switch_on_fiz.todo .todo,
-.vmodal.open.switch_on_yur.todo .tood{
+.vmodal.open.switch_on_yur.todo .todo{
     background-color: #9C5D9A;
 }
 .vmodal.open.switch_on_fiz.finance_help .finance_help,
@@ -184,6 +184,73 @@ z-index: 1000;
 }
 .vmodal.open.switch_on_fiz.volontier .volontier,
 .vmodal.open.switch_on_yur.volontier .volontier{
+    background-color: #9C5D9A;
+}
+/*switch type cards*/
+.vmodal.open.switch_on_yur.volontier.visa .visa-card,
+.vmodal.open.switch_on_yur.material_help.visa .visa-card,
+.vmodal.open.switch_on_yur.finance_help.visa .visa-card,
+.vmodal.open.switch_on_yur.todo.visa .visa-card,
+
+.vmodal.open.switch_on_fiz.volontier.visa .visa-card,
+.vmodal.open.switch_on_fiz.material_help.visa .visa-card,
+.vmodal.open.switch_on_fiz.finance_help.visa .visa-card,
+.vmodal.open.switch_on_fiz.todo.visa .visa-card{
+    background-color: #9C5D9A;
+}
+.vmodal.open.switch_on_yur.volontier.privat .privat-card,
+.vmodal.open.switch_on_yur.material_help.privat .privat-card,
+.vmodal.open.switch_on_yur.finance_help.privat .privat-card,
+.vmodal.open.switch_on_yur.todo.privat .privat-card,
+
+.vmodal.open.switch_on_fiz.volontier.privat .privat-card,
+.vmodal.open.switch_on_fiz.material_help.privat .privat-card,
+.vmodal.open.switch_on_fiz.finance_help.privat .privat-card,
+.vmodal.open.switch_on_fiz.todo.privat .privat-card{
+    background-color: #9C5D9A;
+}
+.vmodal.open.switch_on_yur.volontier.terminal .terminal-card,
+.vmodal.open.switch_on_yur.material_help.terminal .terminal-card,
+.vmodal.open.switch_on_yur.finance_help.terminal .terminal-card,
+.vmodal.open.switch_on_yur.todo.terminal .terminal-card,
+
+.vmodal.open.switch_on_fiz.volontier.terminal .terminal-card,
+.vmodal.open.switch_on_fiz.material_help.terminal .terminal-card,
+.vmodal.open.switch_on_fiz.finance_help.terminal .terminal-card,
+.vmodal.open.switch_on_fiz.todo.terminal .terminal-card{
+    background-color: #9C5D9A;
+}
+.vmodal.open.switch_on_yur.volontier.webMoney .web-card,
+.vmodal.open.switch_on_yur.material_help.webMoney .web-card,
+.vmodal.open.switch_on_yur.finance_help.webMoney .web-card,
+.vmodal.open.switch_on_yur.todo.webMoney .web-card,
+
+.vmodal.open.switch_on_fiz.volontier.webMoney .web-card,
+.vmodal.open.switch_on_fiz.material_help.webMoney .web-card,
+.vmodal.open.switch_on_fiz.finance_help.webMoney .web-card,
+.vmodal.open.switch_on_fiz.todo.webMoney .web-card{
+    background-color: #9C5D9A;
+}
+.vmodal.open.switch_on_yur.volontier.payPal .pay-card,
+.vmodal.open.switch_on_yur.material_help.payPal .pay-card,
+.vmodal.open.switch_on_yur.finance_help.payPal .pay-card,
+.vmodal.open.switch_on_yur.todo.payPal .pay-card,
+
+.vmodal.open.switch_on_fiz.volontier.payPal .pay-card,
+.vmodal.open.switch_on_fiz.material_help.payPal .pay-card,
+.vmodal.open.switch_on_fiz.finance_help.payPal .pay-card,
+.vmodal.open.switch_on_fiz.todo.payPal .pay-card{
+    background-color: #9C5D9A;
+}
+.vmodal.open.switch_on_yur.volontier.bank .bank-card,
+.vmodal.open.switch_on_yur.material_help.bank .bank-card,
+.vmodal.open.switch_on_yur.finance_help.bank .bank-card,
+.vmodal.open.switch_on_yur.todo.bank .bank-card,
+
+.vmodal.open.switch_on_fiz.volontier.bank .bank-card,
+.vmodal.open.switch_on_fiz.material_help.bank .bank-card,
+.vmodal.open.switch_on_fiz.finance_help.bank .bank-card,
+.vmodal.open.switch_on_fiz.todo.bank .bank-card{
     background-color: #9C5D9A;
 }
 
@@ -301,7 +368,13 @@ z-index: 1000;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-color: royalblue;
+    background-color: #C5D5E6;
+}
+.label__text-payment{
+    color: #fff;
+    font-weight: 300;
+    font-family: 'Gilroy';
+    font-size: 12px;
 }
 /*car box*/
 .card{
@@ -352,9 +425,18 @@ z-index: 1000;
     border: 0;
     border-radius: 5px;
     background-color: #F3F7FA;
-    
 }
-
+.button__help{
+    min-width: 300px;
+    min-height: 60px;
+    background: linear-gradient(46.62deg, #E53656 21.87%, #6082D8 124.73%);
+    border: 0px;
+    color: #fff;
+    border-radius: 10px;
+    margin: 0 auto;
+    font-weight: 800;
+    font-size: 18px;
+}
 
 @font-face {
 	font-family: 'Geometria';
