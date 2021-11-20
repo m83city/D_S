@@ -186,6 +186,111 @@ z-index: 1000;
 .vmodal.open.switch_on_yur.volontier .volontier{
     background-color: #9C5D9A;
 }
+
+
+/*to do btn  on form*/
+.todo_box{
+    padding-bottom: 50px;
+    max-width: 1140px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    border: 2px solid #DADADA;
+}
+.todo_box::before{
+    content: '';
+    position: absolute;
+    border: 10px solid transparent;
+    border-bottom: 15px solid #dadada;
+    top: -26px;
+    left: 65px;
+}
+.todo_box::after{
+    content: '';
+    position: absolute;
+    border: 10px solid transparent;
+    border-bottom: 15px solid #fff;
+    top: -23px;
+    left: 65px;
+}
+/*material-help-content  form border*/
+.material_help-content{
+    max-width: 1140px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    border: 2px solid #dadada;
+}
+.material_help-content::after,
+.material_help-content::before{
+    content: '';
+    position: absolute;
+}
+.material_help-content::before{
+    top: -26px;
+    right: 475px;
+    border: 10px solid transparent;
+    border-bottom: 15px solid #dadada;
+
+}
+.material_help-content::after{
+    border: 10px solid transparent;
+    border-bottom: 15px solid white;
+    top: -24px;
+    right: 475px;
+}
+/*hide material_help block */
+.vmodal.open.switch_on_yur.volontier .material_help-content,
+.vmodal.open.switch_on_fiz.volontier .material_help-content,
+.vmodal.open.switch_on_yur.finance_help .material_help-content,
+.vmodal.open.switch_on_fiz.finance_help .material_help-content,
+.vmodal.open.switch_on_fiz.todo .material_help-content,
+.vmodal.open.switch_on_yur.todo .material_help-content{
+    opacity: 0;
+    visibility: hidden;
+    margin: 0;
+    width: 0;
+    height: 0;
+}
+/*hide todo block */
+.vmodal.open.switch_on_yur.volontier .todo_box,
+.vmodal.open.switch_on_fiz.volontier .todo_box,
+.vmodal.open.switch_on_yur.finance_help .todo_box,
+.vmodal.open.switch_on_fiz.finance_help .todo_box,
+.vmodal.open.switch_on_fiz.material_help .todo_box,
+.vmodal.open.switch_on_yur.material_help .todo_box{
+    opacity: 0; visibility: hidden; margin: 0;
+    width: 0;
+    height: 0;
+}
+/*hide finance_help block*/
+.vmodal.open.switch_on_yur.volontier .payment-main,
+.vmodal.open.switch_on_fiz.volontier .payment-main,
+.vmodal.open.switch_on_yur.todo .payment-main,
+.vmodal.open.switch_on_fiz.todo .payment-main,
+.vmodal.open.switch_on_fiz.material_help .payment-main,
+.vmodal.open.switch_on_yur.material_help .payment-main{
+    opacity: 0; visibility: hidden; margin: 0;
+    width: 0;
+    height: 0;
+}
+
+.vmodal.open.switch_on_fiz.todo .todo_box  ,
+.vmodal.open.switch_on_yur.todo .todo_box {
+    visibility: visible;
+    opacity: 1;
+}   
+
+
 /*switch type cards*/
 .vmodal.open.switch_on_yur.volontier.visa .visa-card,
 .vmodal.open.switch_on_yur.material_help.visa .visa-card,

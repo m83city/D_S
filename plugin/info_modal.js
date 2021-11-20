@@ -227,6 +227,15 @@ function _createModal_form(options) {
                     </li>
                 </ul>
             </div>
+            
+<div class="todo_box">
+    <h4 class="todo_title">Lorem ipsum dolor sit.</h4>
+    <p class="todo_text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque rem a repudiandae libero illo nobis, aut repellat velit sed iusto.</p>
+</div>
+<div class="material_help-content">
+    <h4 class="material__help-title">Lorem, ipsum.</h4>
+</div>
+
             <div class="payment-main">
                 <div class="payment-left">
                     <label class="payment__text" for=""></label>
@@ -291,7 +300,6 @@ $.modal = function (options) {
             $modal.classList.add('open')
         },
         close() {
-            $modal.classList.remove('open')
             $modal.classList.add('hide')
 
             setTimeout(() => {
@@ -308,10 +316,14 @@ $.modal = function (options) {
             $modal_form.classList.add('visa')
         },
         close_form() {
+            
             $modal_form.classList.remove('open')
             $modal_form.classList.add('hide')
             setTimeout(() => {
                 $modal_form.classList.remove('hide')
+                $modal_form.classList.remove('material_help')
+                $modal_form.classList.remove('volontier')
+                $modal_form.classList.remove('finance_help')
                 //$modal_form.parentNode.removeChild($modal_form)
             }, ANIMATION_SPEED);
         },
