@@ -167,7 +167,16 @@ z-index: 1000;
     opacity: 0;
     height: 0;
 }
-/*switch end*/
+/*switch end*
+
+/*hover info modal-window*/
+.items-todo:hover,
+.items-finance__help:hover,
+.items-material__help:hover,
+.items-volontier:hover{
+    background-color: #9C5D9A;
+}
+
 
 /*switch type payment start*/
 .vmodal.open.switch_on_fiz.todo .todo,
@@ -190,13 +199,13 @@ z-index: 1000;
 
 /*to do btn  on form*/
 .todo_box{
-    padding-bottom: 50px;
     max-width: 1140px;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
+    margin-top: 25px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
@@ -218,6 +227,35 @@ z-index: 1000;
     top: -23px;
     left: 65px;
 }
+/*type payment forn border*/
+.payment-main{
+    max-width: 1140px;
+    border-radius: 15px;
+    align-items: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    border: 2px solid #DADADA;
+}
+.payment-main::before,
+.payment-main::after{
+    content: '';
+    position: absolute;
+}
+.payment-main::before{
+    border: 10px solid transparent;
+    border-bottom: 15px solid #dadada;
+    top: -26px;
+    left: 335px;
+}
+.payment-main::after{
+    border: 10px solid transparent;
+    border-bottom: 15px solid white;
+    top: -24px;
+    left: 335px;
+}
+
 /*material-help-content  form border*/
 .material_help-content{
     max-width: 1140px;
@@ -282,81 +320,6 @@ z-index: 1000;
     opacity: 0; visibility: hidden; margin: 0;
     width: 0;
     height: 0;
-}
-
-.vmodal.open.switch_on_fiz.todo .todo_box  ,
-.vmodal.open.switch_on_yur.todo .todo_box {
-    visibility: visible;
-    opacity: 1;
-}   
-
-
-/*switch type cards*/
-.vmodal.open.switch_on_yur.volontier.visa .visa-card,
-.vmodal.open.switch_on_yur.material_help.visa .visa-card,
-.vmodal.open.switch_on_yur.finance_help.visa .visa-card,
-.vmodal.open.switch_on_yur.todo.visa .visa-card,
-
-.vmodal.open.switch_on_fiz.volontier.visa .visa-card,
-.vmodal.open.switch_on_fiz.material_help.visa .visa-card,
-.vmodal.open.switch_on_fiz.finance_help.visa .visa-card,
-.vmodal.open.switch_on_fiz.todo.visa .visa-card{
-    background-color: #9C5D9A;
-}
-.vmodal.open.switch_on_yur.volontier.privat .privat-card,
-.vmodal.open.switch_on_yur.material_help.privat .privat-card,
-.vmodal.open.switch_on_yur.finance_help.privat .privat-card,
-.vmodal.open.switch_on_yur.todo.privat .privat-card,
-
-.vmodal.open.switch_on_fiz.volontier.privat .privat-card,
-.vmodal.open.switch_on_fiz.material_help.privat .privat-card,
-.vmodal.open.switch_on_fiz.finance_help.privat .privat-card,
-.vmodal.open.switch_on_fiz.todo.privat .privat-card{
-    background-color: #9C5D9A;
-}
-.vmodal.open.switch_on_yur.volontier.terminal .terminal-card,
-.vmodal.open.switch_on_yur.material_help.terminal .terminal-card,
-.vmodal.open.switch_on_yur.finance_help.terminal .terminal-card,
-.vmodal.open.switch_on_yur.todo.terminal .terminal-card,
-
-.vmodal.open.switch_on_fiz.volontier.terminal .terminal-card,
-.vmodal.open.switch_on_fiz.material_help.terminal .terminal-card,
-.vmodal.open.switch_on_fiz.finance_help.terminal .terminal-card,
-.vmodal.open.switch_on_fiz.todo.terminal .terminal-card{
-    background-color: #9C5D9A;
-}
-.vmodal.open.switch_on_yur.volontier.webMoney .web-card,
-.vmodal.open.switch_on_yur.material_help.webMoney .web-card,
-.vmodal.open.switch_on_yur.finance_help.webMoney .web-card,
-.vmodal.open.switch_on_yur.todo.webMoney .web-card,
-
-.vmodal.open.switch_on_fiz.volontier.webMoney .web-card,
-.vmodal.open.switch_on_fiz.material_help.webMoney .web-card,
-.vmodal.open.switch_on_fiz.finance_help.webMoney .web-card,
-.vmodal.open.switch_on_fiz.todo.webMoney .web-card{
-    background-color: #9C5D9A;
-}
-.vmodal.open.switch_on_yur.volontier.payPal .pay-card,
-.vmodal.open.switch_on_yur.material_help.payPal .pay-card,
-.vmodal.open.switch_on_yur.finance_help.payPal .pay-card,
-.vmodal.open.switch_on_yur.todo.payPal .pay-card,
-
-.vmodal.open.switch_on_fiz.volontier.payPal .pay-card,
-.vmodal.open.switch_on_fiz.material_help.payPal .pay-card,
-.vmodal.open.switch_on_fiz.finance_help.payPal .pay-card,
-.vmodal.open.switch_on_fiz.todo.payPal .pay-card{
-    background-color: #9C5D9A;
-}
-.vmodal.open.switch_on_yur.volontier.bank .bank-card,
-.vmodal.open.switch_on_yur.material_help.bank .bank-card,
-.vmodal.open.switch_on_yur.finance_help.bank .bank-card,
-.vmodal.open.switch_on_yur.todo.bank .bank-card,
-
-.vmodal.open.switch_on_fiz.volontier.bank .bank-card,
-.vmodal.open.switch_on_fiz.material_help.bank .bank-card,
-.vmodal.open.switch_on_fiz.finance_help.bank .bank-card,
-.vmodal.open.switch_on_fiz.todo.bank .bank-card{
-    background-color: #9C5D9A;
 }
 
 /*початок стилів input + text*/

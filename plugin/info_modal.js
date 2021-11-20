@@ -9,9 +9,9 @@ function _createModal(options) {
             <h1 class="first-title title-modal">Види допомоги</h1>
             <div class="modal-content">
                 <ul class="item-help">
-                    <li class="items">
+                    <li class="items ">
                         <div class="image-text">
-                            <img class="img-items" src="image/modal-help1.svg" alt="">
+                            <img class="img-items items-todo" src="image/modal-help1.svg" alt="">
                             <h3 class="title-items title-modal">Зробити</h3>
                         </div>
                         <p class="text">Натискайте цю кнопку,
@@ -26,27 +26,27 @@ function _createModal(options) {
                             Ця кнопка, для організацій, які можуть взяти на себе відповідальність за увесь проект. </p>
                     </li>
     
-                    <li class="items">
+                    <li class="items ">
                         <div class="image-text">
-                            <img class="img-items" src="image/modal-help2.svg" alt="">
+                            <img class="img-items items-finance__help" src="image/modal-help2.svg" alt="">
                             <h3 class="title-items title-modal">Фінансова
                                 допомога</h3>
                         </div>
                         <p class="text">Перераховуйте гроші тим, хто дійсно потребує цього. </p>
                     </li>
     
-                    <li class="items">
+                    <li class="items ">
                         <div class="image-text">
-                            <img class="img-items title-modal" src="image/modal-help3.svg" alt="">
+                            <img class="img-items title-modal items-material__help" src="image/modal-help3.svg" alt="">
                             <h3 class="title-items">Матеріальна  допомога</h3>
                         </div>
                         <p class="text">Зберіть ліки, речі, їжу,
                             іграшки та інше, для тих, кому це необхідно.</p>
                     </li>
     
-                    <li class="items">
+                    <li class="items ">
                         <div class="image-text">
-                            <img class="img-items title-modal" src="image/modal-help4.svg" alt="">
+                            <img class="img-items title-modal items-volontier" src="image/modal-help4.svg" alt="">
                             <h3 class="title-items">Волонтерство</h3>
                         </div>
                         <p class="text">Допоможіть ділом або професійними навичками. 
@@ -301,10 +301,10 @@ $.modal = function (options) {
         },
         close() {
             $modal.classList.add('hide')
-
+            $modal.classList.remove('open')
             setTimeout(() => {
                 $modal.classList.remove('hide')
-                $modal_form.classList.remove('hide')
+                
                 //$modal.parentNode.removeChild($modal)
             }, ANIMATION_SPEED);
 
