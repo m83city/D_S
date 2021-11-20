@@ -229,6 +229,7 @@ z-index: 1000;
 }
 /*type payment forn border*/
 .payment-main{
+    height: 270px;
     max-width: 1140px;
     border-radius: 15px;
     align-items: center;
@@ -258,6 +259,7 @@ z-index: 1000;
 
 /*material-help-content  form border*/
 .material_help-content{
+    height: 200px;
     max-width: 1140px;
     border-radius: 15px;
     display: flex;
