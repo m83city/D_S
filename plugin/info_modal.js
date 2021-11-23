@@ -201,27 +201,27 @@ function _createModal_form(options) {
                 <ul class="help__type">
                     <li class="menu__type-item" onclick="modal.todo()">
                         <div class="item-menu_type">
-                            <img class="menu__type-item-img todo" src="image/modal-help1.svg" alt="">
+                            <div class="menu__type-item-img todo"> </div>
                             <p class="label_item-menu">Зробити</p>
                         </div>
                     </li>
                     <li class="menu__type-item" onclick="modal.finance_help()">
                         <div class="item-menu_type">
-                            <img class="menu__type-item-img finance_help" src="image/modal-help2.svg" alt="">
+                            <div class="menu__type-item-img finance_help"> </div>
                             <p class="label_item-menu">Фінансова
                                 допомога</p>
                         </div>
                     </li>
                     <li class="menu__type-item">
                         <div class="item-menu_type" onclick="modal.material_help()">
-                            <img class="menu__type-item-img material_help" src="image/modal-help3.svg" alt="">
+                        <div class="menu__type-item-img material_help"> </div>
                             <p class="label_item-menu">Матеріальна
                                 допомога</p>
                         </div>
                     </li>
                     <li class="menu__type-item">
                         <div class="item-menu_type" onclick="modal.volontier()">
-                            <img class="menu__type-item-img volontier" src="image/modal-help4.svg" alt="">
+                        <div class="menu__type-item-img volontier"> </div>
                             <p class="label_item-menu">Волонтерство</p>
                         </div>
                     </li>
@@ -240,17 +240,17 @@ function _createModal_form(options) {
                 <div class="payment-left">
                     <label class="payment__text" for=""></label>
                     <ul class="payment-table">
-                        <li class="payment-items visa-card" onclick="modal.visa()"><img src="image/visa.svg" alt=""><label
+                        <li class="payment-items visa-card" onclick="modal.visa()"><img  src="image/visa.svg" alt=""><label
                                 for="" class="label__text-payment">Карта Visa/MasterCard</label></li>
-                        <li class="payment-items privat-card" onclick="modal.privat()"><img src="image/privat.svg" alt=""><label
+                        <li class="payment-items privat-card" onclick="modal.privat()"><img  src="image/privat.svg" alt=""><label
                                 for="" class="label__text-payment">Приват24</label></li>
-                        <li class="payment-items terminal-card" onclick="modal.terminal()"><img src="image/terminal.svg"
+                        <li class="payment-items terminal-card" onclick="modal.terminal()"><img  src="image/terminal.svg"
                                 alt=""><label for="" class="label__text-payment">Термінали України</label></li>
-                        <li class="payment-items web-card" onclick="modal.webMoney()"><img src="image/webmoney.svg"
+                        <li class="payment-items web-card" onclick="modal.webMoney()"><img  src="image/webmoney.svg"
                                 alt=""><label for="" class="label__text-payment">WebMoney</label></li>
-                        <li class="payment-items pay-card" onclick="modal.payPal()"><img src="image/paypal.svg" alt=""><label
+                        <li class="payment-items pay-card" onclick="modal.payPal()"><img  src="image/paypal.svg" alt=""><label
                                 for="" class="label__text-payment">PayPal</label></li>
-                        <li class="payment-items bank-card" onclick="modal.bank()"><img src="image/bank.svg" alt=""><label
+                        <li class="payment-items bank-card" onclick="modal.bank()"><img  src="image/bank.svg" alt=""><label
                                 for="" class="label__text-payment">Банковський переказ</label></li>
                     </ul>
                 </div>

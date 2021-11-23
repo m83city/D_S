@@ -10,7 +10,10 @@ z-index: 1000;
 opacity: 1;
 z-index: 1000;
 }
-
+input{
+    outline: none;
+    padding: 2px 5px;
+}
 .vmodal.open .modal-window{
     transform: translateY(-800px);
 }
@@ -85,6 +88,7 @@ z-index: 1000;
     justify-content: space-evenly;
 }
 .image-text{
+    cursor: pointer;
     display: flex;
     align-items: center;
 }
@@ -174,25 +178,6 @@ z-index: 1000;
 .items-finance__help:hover,
 .items-material__help:hover,
 .items-volontier:hover{
-    background-color: #9C5D9A;
-}
-
-
-/*switch type payment start*/
-.vmodal.open.switch_on_fiz.todo .todo,
-.vmodal.open.switch_on_yur.todo .todo{
-    background-color: #9C5D9A;
-}
-.vmodal.open.switch_on_fiz.finance_help .finance_help,
-.vmodal.open.switch_on_yur.finance_help .finance_help{
-    background-color: #9C5D9A;
-}
-.vmodal.open.switch_on_fiz.material_help .material_help,
-.vmodal.open.switch_on_yur.material_help .material_help{
-    background-color: #9C5D9A;
-}
-.vmodal.open.switch_on_fiz.volontier .volontier,
-.vmodal.open.switch_on_yur.volontier .volontier{
     background-color: #9C5D9A;
 }
 
@@ -395,21 +380,70 @@ z-index: 1000;
     list-style-type: none;
 }
 .item-menu_type{
+    cursor: pointer;
     display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 .menu__type-item{
     align-items: center;
     text-align: center;
-    
 }
-
-
 .menu__type-item-img{
     border: 2px solid #C5D5E6;
     border-radius: 15px;
     padding: 20px;
     height: 80px;
     width: 80px;
+}
+/*switch type payment start*/
+.vmodal.open.switch_on_fiz.todo .todo,
+.vmodal.open.switch_on_yur.todo .todo{
+    border: 0;
+    background-color: #9C5D9A;
+    background-image: url(../image/modal-help1white.svg);
+    }
+.vmodal.open.switch_on_fiz.finance_help .finance_help,
+.vmodal.open.switch_on_yur.finance_help .finance_help{
+    background-image: url(../image/modal-help2white.svg);
+    border: 0;
+    background-color: #9C5D9A;
+}
+.vmodal.open.switch_on_fiz.material_help .material_help,
+.vmodal.open.switch_on_yur.material_help .material_help{
+    background-image: url(../image/modal-help3white.svg);
+    border: 0;
+    background-color: #9C5D9A;
+}
+.vmodal.open.switch_on_fiz.volontier .volontier,
+.vmodal.open.switch_on_yur.volontier .volontier{
+    background-image: url(../image/modal-help4white.svg);
+    border: 0;
+    background-color: #9C5D9A;
+}
+
+/*start forms button*/
+.todo,
+.finance_help,
+.material_help,
+.volontier{
+    height: 80px;
+    width: 80px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.todo{
+    background-image: url(../image/modal-help1.svg);
+}
+.material_help{
+    background-image: url(../image/modal-help3.svg);
+}
+.finance_help{
+    background-image: url(../image/modal-help2.svg);
+}
+.volontier{
+    background-image: url(../image/modal-help4.svg);
 }
 .label_item-menu{
     margin-left: 20px;
@@ -418,6 +452,7 @@ z-index: 1000;
     font-size: 18px;
     color: #363B5D;
 }
+
 /*payment boxing*/
 .payment-main{
     display: flex;
@@ -446,6 +481,75 @@ z-index: 1000;
     font-family: 'Gilroy';
     font-size: 12px;
 }
+
+/*switch type cards*/
+.vmodal.open.switch_on_yur.volontier.visa .visa-card,
+.vmodal.open.switch_on_yur.material_help.visa .visa-card,
+.vmodal.open.switch_on_yur.finance_help.visa .visa-card,
+.vmodal.open.switch_on_yur.todo.visa .visa-card,
+
+.vmodal.open.switch_on_fiz.volontier.visa .visa-card,
+.vmodal.open.switch_on_fiz.material_help.visa .visa-card,
+.vmodal.open.switch_on_fiz.finance_help.visa .visa-card,
+.vmodal.open.switch_on_fiz.todo.visa .visa-card{
+    background-color: #9C5D9A;
+}
+.vmodal.open.switch_on_yur.volontier.privat .privat-card,
+.vmodal.open.switch_on_yur.material_help.privat .privat-card,
+.vmodal.open.switch_on_yur.finance_help.privat .privat-card,
+.vmodal.open.switch_on_yur.todo.privat .privat-card,
+
+.vmodal.open.switch_on_fiz.volontier.privat .privat-card,
+.vmodal.open.switch_on_fiz.material_help.privat .privat-card,
+.vmodal.open.switch_on_fiz.finance_help.privat .privat-card,
+.vmodal.open.switch_on_fiz.todo.privat .privat-card{
+    background-color: #9C5D9A;
+}
+.vmodal.open.switch_on_yur.volontier.terminal .terminal-card,
+.vmodal.open.switch_on_yur.material_help.terminal .terminal-card,
+.vmodal.open.switch_on_yur.finance_help.terminal .terminal-card,
+.vmodal.open.switch_on_yur.todo.terminal .terminal-card,
+
+.vmodal.open.switch_on_fiz.volontier.terminal .terminal-card,
+.vmodal.open.switch_on_fiz.material_help.terminal .terminal-card,
+.vmodal.open.switch_on_fiz.finance_help.terminal .terminal-card,
+.vmodal.open.switch_on_fiz.todo.terminal .terminal-card{
+    background-color: #9C5D9A;
+}
+.vmodal.open.switch_on_yur.volontier.webMoney .web-card,
+.vmodal.open.switch_on_yur.material_help.webMoney .web-card,
+.vmodal.open.switch_on_yur.finance_help.webMoney .web-card,
+.vmodal.open.switch_on_yur.todo.webMoney .web-card,
+
+.vmodal.open.switch_on_fiz.volontier.webMoney .web-card,
+.vmodal.open.switch_on_fiz.material_help.webMoney .web-card,
+.vmodal.open.switch_on_fiz.finance_help.webMoney .web-card,
+.vmodal.open.switch_on_fiz.todo.webMoney .web-card{
+    background-color: #9C5D9A;
+}
+.vmodal.open.switch_on_yur.volontier.payPal .pay-card,
+.vmodal.open.switch_on_yur.material_help.payPal .pay-card,
+.vmodal.open.switch_on_yur.finance_help.payPal .pay-card,
+.vmodal.open.switch_on_yur.todo.payPal .pay-card,
+
+.vmodal.open.switch_on_fiz.volontier.payPal .pay-card,
+.vmodal.open.switch_on_fiz.material_help.payPal .pay-card,
+.vmodal.open.switch_on_fiz.finance_help.payPal .pay-card,
+.vmodal.open.switch_on_fiz.todo.payPal .pay-card{
+    background-color: #9C5D9A;
+}
+.vmodal.open.switch_on_yur.volontier.bank .bank-card,
+.vmodal.open.switch_on_yur.material_help.bank .bank-card,
+.vmodal.open.switch_on_yur.finance_help.bank .bank-card,
+.vmodal.open.switch_on_yur.todo.bank .bank-card,
+
+.vmodal.open.switch_on_fiz.volontier.bank .bank-card,
+.vmodal.open.switch_on_fiz.material_help.bank .bank-card,
+.vmodal.open.switch_on_fiz.finance_help.bank .bank-card,
+.vmodal.open.switch_on_fiz.todo.bank .bank-card{
+    background-color: #9C5D9A;
+}
+
 /*car box*/
 .card{
     border-radius: 15px;
